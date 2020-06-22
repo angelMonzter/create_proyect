@@ -1,0 +1,102 @@
+body {
+  color: white;
+  background-color: black;
+  text-transform: uppercase; }
+
+h1, h2, h3, h4, p, span, div, label, input, option, select {
+  font-family: "Spartan", sans-serif; }
+
+label {
+  color: white; }
+
+header div {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px; }
+  header div h1 {
+    padding: 50px 0; }
+
+.instrucciones_izquierda, .instrucciones_derecha {
+  position: absolute;
+  border: 1px solid rgba(209, 143, 214, 0.6);
+  color: rgba(209, 143, 214, 0.6);
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+  font-size: 12px; }
+
+.instrucciones_izquierda {
+  border-left: 0px; }
+
+.instrucciones_derecha {
+  border-right: 0px; }
+
+.instrucciones_izquierda::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border: 10px solid transparent;
+  border-left: 10px solid rgba(209, 143, 214, 0.6);
+  left: 250px; }
+
+.instrucciones_derecha::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border: 10px solid transparent;
+  border-right: 10px solid rgba(209, 143, 214, 0.6);
+  right: 250px; }
+
+.proyecto .instrucciones_izquierda {
+  top: 155px;
+  left: 50px; }
+
+.carpetas .instrucciones_derecha {
+  right: 60px; }
+
+.secciones_principales .instrucciones_izquierda {
+  top: 550px;
+  left: 50px; }
+
+.seo .instrucciones_derecha {
+  top: 715px;
+  right: 60px; }
+
+.subtitulo {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px; }
+  .subtitulo small {
+    font-size: 12px; }
+
+.border_right {
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-top: 70px;
+  padding-bottom: 10px; }
+
+.border_left {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-top: 70px;
+  padding-bottom: 10px; }
+
+input[type='text']::placeholder, select {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  font-size: 13px; }
+
+.seo .large-12 {
+  position: relative;
+  margin-top: 50px; }
+
+.carpetas, .secciones_principales {
+  margin-top: 50px; }
+
+#sitio_web, #sistema {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
