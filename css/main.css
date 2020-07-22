@@ -1,102 +1,133 @@
 body {
-  color: white;
-  background-color: black;
-  text-transform: uppercase; }
+  background-color: black; }
 
 h1, h2, h3, h4, p, span, div, label, input, option, select {
   font-family: "Spartan", sans-serif; }
 
-label {
-  color: white; }
+h2 {
+  text-transform: uppercase; }
 
-header div {
-  width: 100%;
-  text-align: center;
-  padding-top: 20px; }
-  header div h1 {
-    padding: 50px 0; }
-
-.instrucciones_izquierda, .instrucciones_derecha {
-  position: absolute;
-  border: 1px solid rgba(209, 143, 214, 0.6);
-  color: rgba(209, 143, 214, 0.6);
-  padding: 20px;
-  width: 250px;
-  height: 200px;
-  font-size: 12px; }
-
-.instrucciones_izquierda {
-  border-left: 0px; }
-
-.instrucciones_derecha {
-  border-right: 0px; }
-
-.instrucciones_izquierda::before {
-  content: "";
-  position: absolute;
-  height: 0px;
-  width: 0px;
-  border: 10px solid transparent;
-  border-left: 10px solid rgba(209, 143, 214, 0.6);
-  left: 250px; }
-
-.instrucciones_derecha::before {
-  content: "";
-  position: absolute;
-  height: 0px;
-  width: 0px;
-  border: 10px solid transparent;
-  border-right: 10px solid rgba(209, 143, 214, 0.6);
-  right: 250px; }
-
-.proyecto .instrucciones_izquierda {
-  top: 155px;
-  left: 50px; }
-
-.carpetas .instrucciones_derecha {
-  right: 60px; }
-
-.secciones_principales .instrucciones_izquierda {
-  top: 550px;
-  left: 50px; }
-
-.seo .instrucciones_derecha {
-  top: 715px;
-  right: 60px; }
-
-.subtitulo {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 20px; }
-  .subtitulo small {
-    font-size: 12px; }
-
-.border_right {
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
-  padding-top: 70px;
-  padding-bottom: 10px; }
-
-.border_left {
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  padding-top: 70px;
-  padding-bottom: 10px; }
-
-input[type='text']::placeholder, select {
-  font-weight: bold;
+.boton {
   text-transform: uppercase;
-  color: black;
-  font-size: 13px; }
+  background-color: #1579C5;
+  color: white;
+  padding: 20px;
+  border-radius: 2px;
+  border-color: transparent;
+  cursor: pointer; }
 
-.seo .large-12 {
-  position: relative;
-  margin-top: 50px; }
+.boton:hover {
+  background-color: black; }
 
-.carpetas, .secciones_principales {
-  margin-top: 50px; }
-
-#sitio_web, #sistema {
+.caja {
+  background-color: white;
+  color: #1579C5;
+  padding: 40px;
+  margin-top: 70px;
+  height: 600px;
+  border-radius: 10px;
   display: none; }
+  .caja h3 {
+    margin-top: 30px;
+    text-transform: uppercase; }
+  .caja .botones {
+    margin-top: 50px; }
+
+.pasos {
+  display: none; }
+  .pasos div div {
+    background-color: white;
+    color: #1579C5;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 80px; }
+  .pasos p {
+    margin: 0;
+    padding: 12px 0 0 0; }
+
+.paso_activo {
+  background-color: #1579C5 !important;
+  color: white !important; }
+
+.pasos div.paso_web1:after, .pasos div.paso_web2:after, .pasos div.paso_web3:after {
+  content: "";
+  width: 15%;
+  height: 2px;
+  position: absolute;
+  top: 11%;
+  z-index: -1; }
+.pasos div.paso_web1:after {
+  background: white;
+  left: 27%; }
+.pasos div.paso_web2:after {
+  background: white;
+  left: 43%; }
+.pasos div.paso_web3:after {
+  background: white;
+  left: 58%; }
+.pasos div.paso_activo_linea:after {
+  background: #1579C5 !important; }
+
+.inputs {
+  margin: 0 12%;
+  text-align: left;
+  margin-top: 50px; }
+  .inputs label {
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: white;
+    position: absolute;
+    margin-top: -12px;
+    color: #cacaca;
+    padding: 0 5px; }
+  .inputs input {
+    box-shadow: none;
+    height: 3rem; }
+  .inputs select {
+    height: 3rem;
+    margin: 0; }
+
+.checkbox .container_checkbox {
+  padding-top: 100px; }
+.checkbox .botones {
+  margin-top: 125px; }
+
+.custom_checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Spartan", sans-serif; }
+
+.custom_checkbox_show_b {
+  background-image: url(https://programadorwebvalencia.com/img/blog/2018/06/checkbox-uncheck.png); }
+
+/* Oculta input original */
+.custom_checkbox > .custom_checkbox_input {
+  display: none; }
+
+/* Radio personalizado usando <span> */
+.custom_checkbox > .custom_checkbox_show {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+  background-size: cover; }
+
+/* Cambia el checkbox personalizado cuando es pulsado */
+.custom_checkbox > .custom_checkbox_input:checked + .custom_checkbox_show_b {
+  background-image: url(https://programadorwebvalencia.com/img/blog/2018/06/checkbox-check.png); }
+
+.selecciona_proyecto {
+  background-color: white;
+  color: #1579C5;
+  padding: 40px;
+  margin-top: 300px;
+  height: 400px;
+  border-radius: 10px; }
+  .selecciona_proyecto h2 {
+    margin-top: 50px; }
+  .selecciona_proyecto .botones {
+    margin-top: 100px; }
 
 /*# sourceMappingURL=main.css.map */

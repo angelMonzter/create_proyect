@@ -8,9 +8,8 @@
     <meta name="author" content="Angel Efren Albarran Velazquez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="icon" href="img/icono.ico">
+    <link rel="icon" href="">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/foundation.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
@@ -20,9 +19,7 @@
     <!--Header-->
     <header>
             <!--Barra de Navegacion-->
-            <div>
-                <h1>Creador de Proyectos 10,000</h1>
-            </div>
+            
             <!--Barra de Navegacion-->
     </header>
     <!--Header-->
